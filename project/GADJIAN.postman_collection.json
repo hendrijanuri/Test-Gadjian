@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "2bf70c63-be2c-4a31-a379-fbff756de9fc",
+		"name": "GADJIAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "GET ALL EMPLOYEES"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/employees/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				},
+				"description": "GET EMPLOYEE BY ID USING PARAMS"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"ujank\",\r\n    \"phone_number\" : \"08123\",\r\n    \"jobtitle\" : \"quality assurance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				},
+				"description": "ADD EMPLOYEE"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/employees/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"apriadi\",\r\n    \"phone_number\" : \"08123\",\r\n    \"jobtitle\" : \"back-end developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employees/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"3"
+					]
+				},
+				"description": "UPDATE EMPLOYEE BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/employees/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employees/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"4"
+					]
+				},
+				"description": "DELETE EMPLOYEE BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/reverse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"character\" : \"Hello World\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/reverse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reverse"
+					]
+				},
+				"description": "REVERSE ALGORITHM"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/fibonacci",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\" : 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/fibonacci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fibonacci"
+					]
+				},
+				"description": "FIBONACCI ALGORITHM"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/combination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\" : 6,\r\n    \"r\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/combination",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"combination"
+					]
+				},
+				"description": "COMBINATION ALGORITHM"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

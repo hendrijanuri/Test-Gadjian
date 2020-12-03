@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  h4 by Muhammad Hendri Januri
+  h6 powered by express-generator
+  p Welcome to simple #{title}. This app created as a compulsary technical test for gadjian.com
+  p Here's what you can do in this app.
+  ul 
+    li GET ALL EMPLOYEES http://localhost:3000/api/employees
+    li GET BY ID using params http://localhost:3000/api/employees/:params
+    li POST NEW EMPLOYEE http://localhost:3000/api/employees
+    li UPDATE EMPLOYEE BY ID http://localhost:3000/api/employees/:params 
+    li DELETE EMPLOYEE BY ID http://localhost:3000/api/employees/:params
+  p You can also try one of these three algorithm below via POST method 
+  ul 
+    li POST REVERSE ALGORITHM http://localhost:3000/api/reverse
+    li POST FIBONACCI ALGORITHM http://localhost:3000/api/fibonacci
+    li POST COMBINATION ALGORITHM http://localhost:3000/api/combination 
+  
+  p for further question about this app, kindly send me an email at:
+  a(href="mailto:hendrijanuri@gmail.com") hendrijanuri@gmail.com
+  p or visit:
+  a(href="https://github.com/hendrijanuri") Github Page 
